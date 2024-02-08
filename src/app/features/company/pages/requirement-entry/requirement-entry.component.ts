@@ -28,6 +28,10 @@ constructor(){
   });
 
 }
-
+onSubmit(){
+  this.reqService.list().subscribe((data) => {
+    alert(JSON.stringify(this.reqs))
+  });
+}
 
 }

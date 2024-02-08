@@ -1,0 +1,86 @@
+{
+  "requirement-types": [
+    {
+      "id": 10000,
+      "name": "Internet"
+    },
+    {
+      "id": 10002,
+      "name": "Office"
+    },
+    {
+      "id": 10003,
+      "name": "Computer"
+    }
+  ],
+  "requirements": [
+    {
+      "id": 1,
+      "nameThai": "บริษัทสุขสันต์จำกัด",
+      "nameEng": "Suksan Company",
+      "juristicID": "1234567890123"
+    },
+    {
+      "id": 2,
+      "nameThai": "บริษัทเจริญรุ่งเรืองจำกัด",
+      "nameEng": "Jareunrungreung Company",
+      "juristicID": "2345678901234"
+    },
+    {
+      "id": 3,
+      "nameThai": "บริษัทพัฒนาระบบดิจิทัลจำกัด",
+      "nameEng": "Digital System Development Company",
+      "juristicID": "3456789012345"
+    },
+    {
+      "id": 4,
+      "nameThai": "บริษัทยอดเยี่ยมเทคโนโลยีจำกัด",
+      "nameEng": "Excellent Technology Company",
+      "juristicID": "4567890123456"
+    },
+    {
+      "id": 5,
+      "nameThai": "บริษัทมหาอำนาจคอมพิวเตอร์จำกัด",
+      "nameEng": "Mahaamnat Computer Company",
+      "juristicID": "5678901234567"
+    },
+    {
+      "id": 6,
+      "nameThai": "บริษัทประสิทธิ์สุดยอดแอปพลิเคชั่นจำกัด",
+      "nameEng": "Ultimate Application Solutions Company",
+      "juristicID": "6789012345678"
+    },
+    {
+      "id": 7,
+      "nameThai": "บริษัทเด่นสุดยอดโซลูชันจำกัด",
+      "nameEng": "Outstanding Solutions Company",
+      "juristicID": "7890123456789"
+    },
+    {
+      "id": 8,
+      "nameThai": "บริษัทโอกาสทองอยู่ที่เราจำกัด",
+      "nameEng": "Golden Opportunities Company Limited",
+      "juristicID": "8901234567890"
+    },
+    {
+      "id": 9,
+      "nameThai": "บริษัทมหาวิชาการไอทีจำกัด",
+      "nameEng": "Great IT Academic Company Limited",
+      "juristicID": "9012345678901"
+    },
+    {
+      "id": 10,
+      "nameThai": "บริษัทช่างมีศิลป์ด้านเทคโนโลยีจำกัด",
+      "nameEng": "Artisan Technology Company Limited",
+      "juristicID": "0123456789012"
+    },
+    {
+      "nameThai": "บริษัทเดอะ วิจิตรา จำกัด",
+      "nameEng": "the wijita company",
+      "juristicID": "1234567890123",
+      "id": 11
+    }
+   
+    
+  ]
+}
