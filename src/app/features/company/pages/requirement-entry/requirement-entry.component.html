@@ -2,7 +2,7 @@
 <table class ="table">
     <thead>
         <tr>
-          <th>Id</th>
+          <!-- <th>Id</th> -->
           <th>ชื่อบริษัทภาษาไทย</th>
           <th>ชื่อบริษัทภาษาอังกฤษ</th>
           <th>เลขที่จดทะเบียนบริษัท</th>
@@ -11,7 +11,7 @@
       <tbody>
         @for (req of reqs; track req.id) {
             <tr>
-              <td>{{ req.id }}</td>
+              <!-- <td>{{ req.id }}</td> -->
               <td>{{ req.nameThai }}</td>
               <td>{{ req.nameEng }}</td>
               <td>{{ req.juristicID  | juristicIDFormat }}</td>
@@ -24,4 +24,14 @@
       </tbody>
 </table>
 
-debug:{{reqs.values}}
+<br><br>
+<main class="container">
+    <div class="bg-light p-5 rounded ">
+     <a 
+     (click)="onSubmit()"
+     class="bth btn -lg btn-primary "
+     href="javascript:void(0)"
+     role="button"
+     >view json data</a>
+    </div>
+</main>
