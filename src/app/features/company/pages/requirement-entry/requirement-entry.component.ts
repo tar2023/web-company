@@ -1,16 +1,33 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RequirementService } from '../../services/requirement.service';
+import { Requirement } from './../../models/requirement';
+import { Component, inject } from '@angular/core';
+import { JuristicIDFormatPipe } from "../../../../shared/pipes/juristic-id-format.pipe";
 
 @Component({
-  selector: 'app-requirement-entry',
-  standalone: true,
-  imports: [],
-  templateUrl: './requirement-entry.component.html',
-  styleUrl: './requirement-entry.component.css'
+    selector: 'app-requirement-entry',
+    standalone: true,
+    templateUrl: './requirement-entry.component.html',
+    styleUrl: './requirement-entry.component.css',
+    imports: [CommonModule, JuristicIDFormatPipe]
 })
 export default class RequirementEntryComponent {
+  reqService = inject(RequirementService);
+
   
-reqs = [
-  { id:1, nameThai: 'สวัสดี', nameEng: 'seewadee', juristicID: '1234567890123'},
-  { id:2, nameThai: 'สวัสดี', nameEng: 'seewadee', juristicID: '1234567890123'}
-]
+  // * master data
+reqs:Requirement[]=[];
+
+  // * filter data
+  filtered = this.reqs;
+
+constructor(){
+  this.reqService.list().subscribe((data) => {
+    this.reqs = data;
+    this.filtered = this.reqs;
+  });
+
+}
+
+
 }

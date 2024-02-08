@@ -1,4 +1,4 @@
-<p>requirement-entry works!</p>
+<p>จำนวนบริษัททั้งหมด</p>
 <table class ="table">
     <thead>
         <tr>
@@ -14,7 +14,7 @@
               <td>{{ req.id }}</td>
               <td>{{ req.nameThai }}</td>
               <td>{{ req.nameEng }}</td>
-              <td>{{ req.juristicID }}</td>
+              <td>{{ req.juristicID  | juristicIDFormat }}</td>
             </tr>
             } @empty {
             <tr>
@@ -22,5 +22,6 @@
             </tr>
             }
       </tbody>
-    
 </table>
+
+debug:{{reqs.values}}
